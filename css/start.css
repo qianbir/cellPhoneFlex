@@ -1,0 +1,309 @@
+		.divA{
+			background-color: #f2f2f2;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-items: center;
+			
+		}
+		.divA2{
+			display: flex;
+			align-items: center;
+			flex-grow: 1;
+		}
+		/*.divA3{
+			flex-grow: 1;
+		}
+		.divA4{
+			flex-grow: 1;
+		}*/
+		 .divA3{
+		 	display: flex;
+		 	width: 1rem;
+		 	align-items: center;
+		 	justify-content: center;
+		 }
+		 .divA2{
+		 	border: 1px solid grey;
+		 }
+		 .divA4{
+		 	display: flex;
+		 	align-items: center;
+		 	justify-content: center;
+		 }
+		
+		.divB{
+			position: relative;
+			display: flex;
+			align-items: center;
+			height: 0.57rem;
+			background-color: #f2f2f2;
+		
+		}
+		.divB1{
+			flex-grow: 1;
+			
+			/*border: 1px solid red;*/
+			display: flex;
+			align-items: center;
+			white-space: nowrap;
+			background-color: #f2f2f2;
+			height: 0.57rem;
+			justify-content: space-between;
+			overflow-x: auto;
+			font-size: 0.3rem;
+			color: grey;
+			
+
+		}
+
+		
+		
+		.divB1>div{
+			padding:0;
+			margin-right: 0.45rem;
+			
+			
+
+		}
+		.divB1>div:hover{
+			border-bottom: 1px solid red;
+		}
+		.divB1 span{
+			vertical-align: middle;
+			font-size: 0.35rem;
+			color: grey;
+    		
+		}
+		.divB1::-webkit-scrollbar{
+
+			display: none;
+		}
+		.divB2{
+			
+			width: 1rem;
+			/*border: 1px solid red;*/
+			
+			background-color: #f2f2f2;
+			height: 0.57rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 0.3rem;
+			color: grey;
+			box-shadow: -12px 0px 17px 0px #f3efef;
+			z-index: 9;
+			
+		}
+
+		.divB3{
+			position: absolute;
+			background-color: white;
+			top: 0;
+			right: 0;
+			visibility: hidden;
+			width: 100%;
+			height: 0rem;
+			border: 1px solid red;
+			
+			
+		}
+		.divB4{
+			display: flex;
+			
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			
+		}
+		.divB4>span{
+			text-align: center;
+			width: 1rem;
+			height: 0.4rem;
+			padding-top: 0.05rem;
+		    margin-right: 0.5rem;
+		    margin-top: 0.2rem;
+		    background-color: white;
+		    border: 1px solid red;
+		    font-size: 0.2rem;
+		    opacity: 0;
+		   
+		}
+		.divB6:hover ~.divB3{
+			height: 2rem;
+			visibility: visible;
+			
+			transition: height 0.3s;
+		}
+		.divB6:hover ~.divB3 span{
+			
+			opacity: 1;
+			transition: opacity 0.8s;
+		}
+	
+		.divB6 .span1{
+			font-size: 0.4rem;
+		}
+	
+		.divC{
+			
+			height: 4rem;
+			
+			overflow: hidden;
+		}
+		.divC2{
+			width: 27rem;
+			height: 4rem;
+		}
+		.divC1{
+			display: inline-block;
+			width: 8.5rem;
+			height: 100%;
+		}
+		.divC1>img{
+			width: 100%;
+			height: 100%;
+		}
+		.divC2{
+			
+			animation: move 5s infinite;
+		}
+		@keyframes move{
+			0%{
+				margin-left: 0rem;
+			}
+			5%{
+				margin-left: 0rem;
+			}
+			40%{
+				margin-left: -9rem;
+			}
+			45%{
+				margin-left: -9rem;
+			}
+			80%{
+				margin-left: -18rem;
+			}
+			85%{
+				margin-left: -18rem;
+			}
+			100%{
+				margin-left: 0rem;
+			}
+		}
+		.divD{
+			
+			height: 1.52rem;
+			
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			overflow: hidden;
+		}
+		.divD>a{
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+		.divD img{
+			width: 100%;
+			height: 100%;
+		}
+		.divE{
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+			border: 1px solid #e2caca;
+			/*height: 1rem;*/
+			z-index: 11;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: white;
+		}
+		.divE>a{
+			text-decoration: none;
+			text-decoration: none;
+		    display: flex;
+		    align-items: center;
+		    flex-wrap: wrap;
+		    width: 0.6rem;
+		    justify-content: center;
+
+		}
+		.divE span{
+			font-size: 0.2rem;
+
+		}
+		.divF{
+			position: relative;
+			height: 5rem;
+			
+
+		}
+		.divF>a{
+			display: block;
+		}
+		.divF>a:first-child{
+			width: 3.57rem;
+			height: 100%;
+		}
+		.divF>a:nth-child(2){
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 3.4rem;
+			height: 49%;
+		}
+		.divF>a:nth-child(3){
+			position: absolute;
+			right: 0;
+			top: 2.5rem;
+			width: 3.4rem;
+			height: 49%;
+		}
+		.divF img{
+			width: 100%;
+			height: 100%;
+		}
+		.divG{
+			
+		
+			height: 3rem;
+			border: 1px solid red;
+		}
+		
+		.divG img{
+			width: 100%;
+			height: 100%;
+		}
+		.divH{
+			
+			
+			display: flex;
+			justify-content: space-around;
+
+		}
+		.divH a{
+			width: 49%;
+			
+			text-decoration: none;
+
+		}
+		.divH1{
+			width: 100%;
+			height: 2.5rem;
+		}
+		.divH1 img{
+			width: 100%;
+			height: 100%;
+		}
+		.divH2{
+			width: 100%;
+			height: 1.5rem;
+			text-align: center;
+		}
+		.divH2 span{
+			display: block;
+			   font-size: 0.3rem;
+    		color: #3c3333;
+		}
